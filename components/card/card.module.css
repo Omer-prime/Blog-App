@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Pacifico&family=Patua+One&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+.container{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.imageContainer{
+    flex: 1;
+    height: 400px;
+    position: relative;
+}
+.textContainer{
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+.textContainer p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.img{
+    object-fit: cover;
+}
+.date{
+    color: gray;
+ margin-top: 20px;
+}
+.category{
+    color: crimson;
+    font-weight: 500;
+}
+.desc{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--softTextColor);
+}
+.link{
+    border-bottom: 1px solid crimson;
+    width: fit-content;
+    padding: 2px 0;
+}
+@media screen and (max-width:1280px) {
+    .imageContainer{
+        display: none;
+    }
+}

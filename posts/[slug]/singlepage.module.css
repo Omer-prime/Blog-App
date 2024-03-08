@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Pacifico&family=Patua+One&family=Quicksand:wght@300&display=swap');
+.container{
+    
+}
+.infoContainer{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.textContainer{flex: 1;}
+.imageContainer{
+    flex: 1;
+     height: 350px;
+     width: 50%;
+    position: relative;
+}
+.title{
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+.image{
+    object-fit: cover;
+}
+.userimgContainer{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.user{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.avatar{
+    border-radius: 50%;
+    object-fit: cover;
+}
+.userTextContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--softTextColor);
+}
+.username{
+    font-size: 20px;
+    font-weight: 500;
+}
+.content{
+display: flex;
+    gap: 50px;
+}
+.post{
+    flex: 5;
+    margin-top: 60px;
+}
+.description p{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:1520px) {
+    .title{
+        font-size: 27px;
+    }
+}
+@media screen and (max-width:1220px) {
+    .title{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:1020px) {
+    .title{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:760px) {
+    .title{
+        font-size: 22px;
+    }
+    .imageContainer{
+        display:none;
+    }
+    .description p{
+        font-size: 14px;
+    }
+}

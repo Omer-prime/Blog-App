@@ -1,0 +1,15 @@
+.container{
+ 
+    gap: 50px;
+}
+.title{
+    background-color: #af390a;
+    color: white;
+    padding: 16px  10px;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.content{
+    display: flex;
+}

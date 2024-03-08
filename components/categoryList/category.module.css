@@ -1,0 +1,143 @@
+.container{
+ 
+}
+.title{
+    margin: 50px 0px;
+}
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.category{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    width: 15%;
+    height: 80px;
+    justify-content: center;
+}
+.category.style{
+    background-color:transparent;
+    border-radius:10px;
+
+}
+#img{
+    border-radius: 50%;
+}
+.a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color:var(--softTextColor);
+    text-transform: uppercase;
+    letter-spacing: .01px;
+    text-decoration: none;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+
+
+.a:hover {
+    color: #255784;
+    background: #3994df;
+    box-shadow: 0 0 10px #3298eb, 0 0 40px #3296e9, 0 0 80px #2b92e7;
+    transition-delay: 1s;
+}
+
+
+.a span {
+    position: absolute;
+    display: block;
+}
+
+
+
+
+.a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2897f3);
+}
+
+
+
+.a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+.a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+
+.a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2b98f1);
+}
+
+.a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+
+.a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #299cfa);
+}
+
+.a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+@media screen and (max-width: 1280px) {
+    .category {
+      width: 20%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .category {
+      width: 25%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .category {
+      width: 45%;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .category {
+      width: 100%;
+    }
+  }
+

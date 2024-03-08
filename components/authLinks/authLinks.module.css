@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Pacifico&family=Patua+One&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+.link{
+    cursor: pointer;
+}
+#login{
+    position: relative;
+    padding: 11px 12px;
+    
+        font-family: 'Roboto', sans-serif;
+    
+  }
+#login:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #740f0f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #login:hover:after{
+    width:100%;
+    left: 0;
+  }
+.burger
+{   cursor: pointer;
+    width: 20px;
+    height: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.responsiveMenu{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: var(--bg);
+    height: calc(50vh - 50px);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--textColor);
+}
+@media  screen and (max-width: 640px) {
+    .burger{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+}

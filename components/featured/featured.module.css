@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Pacifico&family=Patua+One&display=swap');
+.container{
+    margin-top: 40px;
+}
+
+.title{
+    font-size: 50px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 200;
+    margin-top: 50px;
+}
+.post{
+    margin-top: 60px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.imgContainer{
+    height: 500px;
+    position: relative;
+    flex: 1;
+}
+.image{
+    object-fit: cover;
+}
+.textContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.postTitle{
+    font-size: 40px;
+}
+.postdesc{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--softTextColor);
+}
+.button{
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Patua One', serif;
+    width: max-content;
+}
+.button:hover{
+    background-color: antiquewhite;
+}
+@media screen and (max-width:1280px) {
+    .title{
+        font-size: 42px;
+    }
+    .imgContainer{
+        height: 400px;
+    }
+    
+} 
+@media screen and (max-width:1080px) {
+    .title{
+        font-size: 28px;
+    }
+    .imgContainer{
+       height:300px ;
+    }
+    .postTitle{
+        font-size: 30px;
+    }
+    .postdesc{
+        font-size: 13px;
+    }
+    .button{
+        padding: 10px 15px;
+    }
+} 
+@media screen and (max-width:780px) {
+    .title{
+        font-size: 22px;
+    }
+} 
+@media screen and (max-width:650px) {
+    .title{
+        font-size: 18px;
+    }
+    .imgContainer{
+        display:none;
+        
+    }
+} 

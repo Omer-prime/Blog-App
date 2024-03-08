@@ -1,0 +1,32 @@
+.categoryList{
+    margin-top: 35px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.categoryItem{
+    padding: 14px 25px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+.bus{
+    background-color: #af0aaf;
+    color: white;
+}
+.style{
+    background-color: #af390a;
+    color: white;
+}
+.crypto{
+    background-color: #e9db1a;
+    color: white;
+}
+.fash{
+    background-color: #0a8eaf;
+    color: white;
+}
+.tech{
+    background-color: #1a0aaf;
+    color: white;
+}

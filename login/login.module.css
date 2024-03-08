@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Pacifico&family=Patua+One&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    background-color: var(--softBg);
+    padding: 150px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    border-radius: 12px;
+    
+}
+.socialButton{
+  font-weight: bolder;
+    padding: 20px;
+    border-radius: 6px;
+    color: whitesmoke;
+   
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialButton:first-child{
+    background: #256e2f;
+}
+.socialButton:nth-child(2){
+    background: #061e31;
+}
+.socialButton:nth-child(3){
+    background: rgb(1, 99, 179);
+}
+@media screen and (max-width:730px) {
+    .wrapper{
+        padding: 50px 100px;
+    }
+}
+@media screen and (max-width:640px) {
+    .wrapper{
+        padding: 30px ;
+    }
+    .socialButton{
+        font-weight: 400;
+        font-size: 14px;
+    }
+}

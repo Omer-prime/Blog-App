@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Pacifico&family=Patua+One&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+.link{
+  font-family: 'Roboto', sans-serif
+}
+.social {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  font-size: 20px;
+}
+#link2{
+  position: relative;
+  padding: 11px 12px;
+}
+#link2:after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #740f0f;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#link2:hover:after{
+  width:100%;
+  left: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .logo {
+    font-size: 32px;
+    padding-right: 13px;
+  }
+  .social{
+    display: none;
+  }
+  .links {
+    font-size: 18px;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .social {
+    display: none;
+  }
+  .logo {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+  .link{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 641px) {
+  .links{
+    justify-content: flex-end;
+
+
+  }
+  .link {
+    display: none;
+  }
+
+
+}

@@ -1,0 +1,62 @@
+.container{
+    position: relative;
+    width: 50px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ball{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+}
+@media screen and (max-width: 1268px){
+.container{
+    width:30px;
+    height: 12px;
+   
+}
+.ball{
+    width: 10px;
+    height: 10px;
+
+}
+.img{
+    width: 12px;
+    height: 11px;
+}
+}
+@media screen and (max-width: 1068px){
+.container{
+    width:30px;
+    height: 12px;
+   
+}
+.ball{
+    width: 10px;
+    height: 10px;
+
+}
+.img{
+    width: 12px;
+    height: 11px;
+}
+}
+@media screen and (max-width: 768px){
+.container{
+    width:30px;
+    height: 12px;
+}
+.ball{
+    width: 10px;
+    height: 10px;
+}
+.img{
+    width: 12px;
+    height: 11px;
+}
+}
