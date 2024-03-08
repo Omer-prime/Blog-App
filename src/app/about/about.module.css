@@ -1,0 +1,95 @@
+.container{
+   
+    align-items: center;
+    line-height: 2;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.head{
+    font-size: 3rem;
+    justify-content:center ;
+    align-items: center;
+}
+.team{
+    margin-top: 10px;
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+margin-left: px;
+}
+
+.profilePic{
+    object-fit: cover;
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   border-radius: 20px;
+}
+.h4{
+    font-size: 2rem;
+}
+@media screen  and (max-width:862px) {
+    .container{
+        width: 100%;
+        margin: 0px 22px;
+        padding: 0px 20px;
+        line-height: 1.5;
+    }
+    .container p{
+        font-size:13px ;
+    }
+    .head{
+        font-size: 30px;
+        justify-content:center ;
+        align-items: center;
+    }
+    .team {
+        font-size: 1.5rem;
+      }
+}
+@media screen  and (max-width:630px) {
+    .container{
+        width: 100%;
+        margin: 0px 22px;
+        padding: 0px 20px;
+        line-height: 1.5;
+    }
+    .container p{
+        font-size:13px ;
+    }
+    .head{
+        font-size: 30px;
+        justify-content:center ;
+        align-items: center;
+    }
+    .team {
+        font-size: 1rem;
+      }
+      .h4{
+        font-size: 1.3rem;
+      }
+      .profilePic{
+        width: 100%;
+      }
+}
+@media only screen and (max-width: 600px) {
+    .head {
+      font-size: 30px;
+    }
+  
+    .team {
+      font-size: 1.5rem;
+    }
+  
+    .profilePic {
+      max-width: 100%; /* Adjusted max-width for small screens */
+    }
+  
+    .h4 {
+      font-size: 1.5rem;
+    }
+  }
